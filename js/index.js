@@ -109,3 +109,22 @@ paragraphsOfContactSection[2].textContent = "sales@greatidea.io";
 //Code for the footer
 const paragraphOfFooter = document.querySelector('footer p');
 paragraphOfFooter.textContent = "Copyright Great Idea! 2018";
+
+//Code for task 3
+links.forEach(item => {
+  item.style.color = "green";
+})
+
+const navigationLinks = document.querySelector('nav');
+
+const additionalItemFront = document.createElement('a');
+const additionalItemEnd = document.createElement('a');
+
+additionalItemFront.textContent = "Employees"
+additionalItemEnd.textContent = "History";
+
+additionalItemFront.style.color = "green";
+additionalItemEnd.style.color = "green";
+
+navigationLinks.prepend(additionalItemFront);
+navigationLinks.appendChild(additionalItemEnd);
